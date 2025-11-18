@@ -152,10 +152,15 @@ Para implementar la comunicación UART y verificar su correcto funcionamiento an
 Como observación adicional, durante el desarrollo se intentó configurar interrupciones por cambio en el puerto, utilizando los pines RB4 a RB7. Sin embargo, aun configurando los registros correctamente, no fue posible lograr que ambas interrupciones se activaran como se esperaba, lo que generaba errores en la ejecución. Debido a esta limitación, se decidió finalmente utilizar solo una interrupción por cambio en el puerto (RB7) y complementar el control con una interrupción externa en RB0, la cual funcionó de manera confiable dentro del sistema.
 
 Link de video para Labview
+
 https://www.youtube.com/watch?v=W50WbUEDNz8 
+
 Link video calibrar Driver 
+
 https://youtu.be/L0RwBb-lLts?si=67xK1I1KQQVZf7IQ
+
 Link colocar A4988 Porteus 
+
 https://youtu.be/uw_c8uryuY4?si=PnAg2LO18cRGbvqZ
 
 ---
