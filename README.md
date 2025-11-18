@@ -9,14 +9,11 @@ Sistema de control de una cinta transportadora con regulación de velocidad, cam
 
 Este repositorio contiene:
 
-- Código ensamblador (`TP_FINAL.asm`)
-- Código en hexadecimal (`TP_FINAL.hex`)
-- Programa de LabVIEW para el control manual via UART (`TP_FINAL_control_manual.vi`)
-- Programa de Proteus con simulación del circuito (`TP_FINAL_simulación.pdsprj`)
-- Video del circuito funcionando en modo manual (`Modo manual.mp4`)
-- Video del circuito funcionando en modo automático  (`Modo automático.mp4`)
-- Diagrama de bloques del funcionamiento
-- Documentación para instalar, compilar y usar el sistema
+- Código ensamblador
+- Código en hexadecimal
+- Programa de LabVIEW para el control manual via UART 
+- Programa de Proteus con simulación del circuito 
+- Video del circuito funcionando
 
 ---
 ## 📸 Fotografía del Circuito con la Cinta
@@ -153,6 +150,13 @@ El panel mostrado en el repositorio permite:
 Para implementar la comunicación UART y verificar su correcto funcionamiento antes de utilizar el programa en LabView, se empleó la herramienta Hercules, la cual permitió realizar pruebas de transmisión y recepción de datos de manera rápida y sencilla.
 
 Como observación adicional, durante el desarrollo se intentó configurar interrupciones por cambio en el puerto, utilizando los pines RB4 a RB7. Sin embargo, aun configurando los registros correctamente, no fue posible lograr que ambas interrupciones se activaran como se esperaba, lo que generaba errores en la ejecución. Debido a esta limitación, se decidió finalmente utilizar solo una interrupción por cambio en el puerto (RB7) y complementar el control con una interrupción externa en RB0, la cual funcionó de manera confiable dentro del sistema.
+
+Link de video para Labview
+https://www.youtube.com/watch?v=W50WbUEDNz8 
+Link video calibrar Driver 
+https://youtu.be/L0RwBb-lLts?si=67xK1I1KQQVZf7IQ
+Link colocar A4988 Porteus 
+https://youtu.be/uw_c8uryuY4?si=PnAg2LO18cRGbvqZ
 
 ---
 
