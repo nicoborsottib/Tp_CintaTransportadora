@@ -70,7 +70,9 @@ Dado que el motor opera en pasos completos, es recomendable no superar el 70 % d
 Las entradas del driver A4988 provienen directamente de las salidas del PIC16F887. Los pines asignados fueron:
 
 DIR → RB1
+
 STEP → RB3
+
 SLEEP → RB2
 
 El pin SLEEP se conectó conjuntamente con RESET, tal como lo especifica la conexión recomendada para este driver.
@@ -99,7 +101,7 @@ Finalmente, los pines MS1, MS2 y MS3 se conectaron a tierra, ya que el proyecto 
 
 ## 🛠️ Cómo Compilar y Programar
 
-### 1️⃣ Instalar herramientas  
+### Instalar herramientas  
 
 **Softwares usados:**  
 
@@ -111,7 +113,7 @@ Finalmente, los pines MS1, MS2 y MS3 se conectaron a tierra, ya que el proyecto 
 
 ---
 
-### 4️⃣ ¿Cómo cargar el programa .hex al PIC?
+### ¿Cómo cargar el programa .hex al PIC?
 
 - Conectar el puerto serie del PC al PIC (USB-TTL)
 - Abrir el AN1310
@@ -141,8 +143,8 @@ Finalmente, los pines MS1, MS2 y MS3 se conectaron a tierra, ya que el proyecto 
 El panel mostrado en el repositorio permite:
 
 - Configurar el VISA resource name (puerto COM ) -> **Paso que debo realizar obligatoriamente**
-- Enviar un valor PWM manual por medio de una perilla
-- Enviar un 1,2,3,4 en ASCI para generar las interrupciones por uart
+- Enviar un valor analogico manual por medio de una perilla.
+- Enviar un 1,2,3,4 en ASCI para generar las interrupciones por uart.
 ---
 
 ## 📝 Notas Útiles para Quien Quiera Usar el Proyecto
